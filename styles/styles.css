@@ -1,0 +1,142 @@
+/* 1. Variables & Reset */
+:root {
+    --ucp-blue: #003366;      /* Primary University Brand Color */
+    --ucp-gold: #ffcc00;      /* Accent Color */
+    --dark-grey: #1a1a1a;     /* Nav Background */
+    --light-bg: #f8f9fa;      /* Page Background */
+    --white: #ffffff;
+    --text-main: #333333;
+    --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-bg);
+    color: var(--text-main);
+}
+
+/* 2. Header & Hero Section */
+header {
+    background-color: var(--ucp-blue);
+    color: var(--white);
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 5px solid var(--ucp-gold);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* 3. Navigation Bar */
+nav {
+    background-color: var(--dark-grey);
+    padding: 0.8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+nav a:hover, nav a.active {
+    color: var(--ucp-gold);
+}
+
+/* 4. Main Content Area */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+h2 {
+    color: var(--ucp-blue);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+/* 5. Reusable Components (Sections, Lists, Tables) */
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #fdfdfd;
+    border-left: 4px solid var(--ucp-blue);
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: var(--ucp-blue);
+}
+
+/* 6. Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--dark-grey);
+    color: #888;
+    margin-top: 3rem;
+    font-size: 0.8rem;
+}
+
+/* 7. RESPONSIVE MEDIA QUERIES (Task 7 Requirement) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px 0;
+        border-bottom: 1px solid #333;
+        margin: 0;
+    }
+
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto; /* Ensures table is readable on small screens */
+    }
+}
