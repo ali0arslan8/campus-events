@@ -4,11 +4,24 @@
   },
   "name": "campus-events",
   "version": "1.0.0",
+<<<<<<< HEAD
+"source": "src/index.html",
+=======
+>>>>>>> b93ebe785ebaf8e98cb51bbf626fa5e41b8c20f2
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ali0arslan8/campus-events.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ali0arslan8/campus-events/issues"
+  },
+  "homepage": "https://github.com/ali0arslan8/campus-events#readme",
   "description": ""
 }
