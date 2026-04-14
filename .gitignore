@@ -1,0 +1,7 @@
+<<<<<<< feature/gallery
+=======
+node_modules/
+dist/
+.parcel-cache/
+>>>>>>> b93ebe785ebaf8e98cb51bbf626fa5e41b8c20f2
+>>>>>>> main
