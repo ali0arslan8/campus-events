@@ -13,7 +13,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ali0arslan8/campus-events.git"
